@@ -93,6 +93,7 @@
     width: 100%;
     margin-bottom: 25px;
     padding-left: 5px;
+    border-radius: 0 !important;
 }
 .login-code {
     display: flex;
@@ -327,12 +328,12 @@ form:before {
         display: block;
     }
     .main-container {
-        padding: 50px 46px 0 45px;
+        padding: 50px 46px 50px 45px;
         width: 100%;
         overflow: hidden;
     }
     .main-title {
-        font-size: 25px;
+        font-size: 22px;
         line-height: 31px;
         text-align: center;
         padding-left: 0;
