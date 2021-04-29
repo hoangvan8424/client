@@ -79,6 +79,7 @@
 }
 .form-input {
     display: flex;
+    margin-bottom: 25px;
 }
 .input-username, .input-password {
     outline: none;
@@ -91,9 +92,17 @@
     font-size: 16px;
     display: inline-block;
     width: 100%;
-    margin-bottom: 25px;
     padding-left: 5px;
     border-radius: 0 !important;
+}
+.form-input-password {
+    position: relative;
+}
+.icon-view {
+    position: absolute;
+    right: 18px;
+    top: 5px;
+    z-index: 99;
 }
 .login-code {
     display: flex;
@@ -141,9 +150,9 @@
     border-color: transparent;
     font-family: "Helvetica Neue Condensed Bold";
 }
-.icon-password {
+.icon-password, .icon-username {
     position: relative;
-    bottom: 5px;
+    bottom: -5px;
 }
 .banner-bottom-item-container {
     width: 75%;

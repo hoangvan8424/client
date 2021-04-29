@@ -51,11 +51,16 @@
                             </span>
                             <input class="input-username" type="text" name="username" id="username" placeholder="">
                         </div>
-                        <div class="login-form-group form-input">
-                            <span class="icon-password">
-                                <img src="assets/images/icon_lock.png" alt="">
-                            </span>
+                        <div class="login-form-group form-input form-input-password">
+                                <span class="icon-password">
+                                    <img src="assets/images/icon_lock.png" alt="">
+                                </span>
                             <input class="input-password" type="password" name="password" id="password" placeholder="">
+
+                            <p class="icon-view" id="icon-view" onclick="showPassword()">
+                                <img src="assets/images/icon_view.png" alt="">
+                            </p>
+
                         </div>
                         <div class="login-form-group login-code">
                             <div class="login-code-left">
@@ -145,6 +150,15 @@
                 clickable: true,
             },
         });
+
+        function showPassword() {
+            var x = document.getElementById("password");
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+        }
     </script>
 </body>
 </html>
