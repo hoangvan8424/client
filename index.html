@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+<body>
+    <div class="main">
+        <div class="main-container">
+            <p class="main-title">HỆ THỐNG GIÁM SÁT<br class="br-sp"> HÀNH TRÌNH HỢP CHUẨN<br class="br-sp"> NGHỊ ĐỊNH 10/2020</p>
+            <div class="banner-top">
+                <div class="slider">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="slider-img">
+                                    <img src="assets/images/slider_1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider-img">
+                                    <img src="assets/images/slider_1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider-img">
+                                    <img src="assets/images/slider_1.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination slider-pagination"></div>
+                </div>
+
+                <div class="login-form">
+                    <form action="" method="POST" enctype="multipart/form-data">
+                        <div class="icon-login">
+                            <img src="assets/images/profile.png" alt="">
+                        </div>
+                        <div class="icon-login-sp">
+                            <img src="assets/images/baby-car.png" alt="">
+                        </div>
+                        <div class="login-form-group form-input">
+                            <span class="icon-username">
+                                <img src="assets/images/icon_user.png" alt="">
+                            </span>
+                            <input class="input-username" type="text" name="username" id="username" placeholder="">
+                        </div>
+                        <div class="login-form-group form-input">
+                            <span class="icon-password">
+                                <img src="assets/images/icon_lock.png" alt="">
+                            </span>
+                            <input class="input-password" type="password" name="password" id="password" placeholder="">
+                        </div>
+                        <div class="login-form-group login-code">
+                            <div class="login-code-left">
+                                <p class="code-txt">Code</p>
+                                <p class="code-number">1639</p>
+                            </div>
+                            <div class="login-code-right">
+
+                            </div>
+                        </div>
+                        <button class="btn-login">Đăng nhập</button>
+                    </form>
+                    <div class="figure"></div>
+                    <div class="qr-code">
+                        <div class="qr-code-container">
+                            <img src="assets/images/qr-code.png" alt="">
+                        </div>
+                        <div class="store-icon">
+                            <a href="">
+                                <img src="assets/images/play.png" alt="">
+                            </a>
+                            <a href="">
+                                <img src="assets/images/app-store.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="banner-bottom">
+            <div class="banner-bottom-item-container">
+                <div class="banner-item">
+                    <p>
+                        <img src="assets/images/pin.png" alt="">
+                    </p>
+                    <p class="icon-car">
+                        <img src="assets/images/baby-car-1.png" alt="">
+                    </p>
+                </div>
+                <div class="banner-item">
+                    <p>
+                        <img src="assets/images/rfid.png" alt="">
+                    </p>
+                    <p class="icon-car">
+                        <img src="assets/images/cargo-truck.png" alt="">
+                    </p>
+                </div>
+                <div class="banner-item">
+                    <p>
+                        <img src="assets/images/cctv.png" alt="">
+                    </p>
+                    <p class="icon-car">
+                        <img src="assets/images/truck.png" alt="">
+                    </p>
+                </div>
+                <div class="banner-item">
+                    <p>
+                        <img src="assets/images/icon_1.png" alt="">
+                    </p>
+                    <p class="icon-car">
+                        <img src="assets/images/bus.png" alt="">
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-container">
+                <p class="footer-txt txt-first">Hệ Thống Phân Phối Toàn Quốc</p>
+                <p class="footer-txt txt-second">Bảo Hành Hỗ Trợ Siêu Tốc</p>
+                <p class="footer-txt txt-third">Hệ Sinh Thái Đa Dạng Phù Hợp Tất Cả Yêu Cầu</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
+</body>
+</html>

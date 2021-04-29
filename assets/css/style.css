@@ -1,0 +1,417 @@
+@font-face {
+    font-family: "Helvetica Neue Condensed Bold";
+    src: url("../fonts/HelveticaNeue-CondensedBold.otf");
+}
+@font-face {
+    font-family: "Helvetica Neue Bold";
+    src: url("../fonts/HelveticaNeue-Bold.otf");
+}
+@font-face {
+    font-family: "Helvetica Neue Bold Italic";
+    src: url("../fonts/HelveticaNeue-BoldItalic.otf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main {
+    min-height: 100vh;
+    background-color: #178BFF;
+    opacity: 0.75;
+}
+.main-container {
+    padding: 67px 71px 0 72px;
+}
+.main-title {
+    font-size: 38px;
+    color: #ffffff;
+    font-weight: 600;
+    line-height: 46px;
+    margin-bottom: 48px;
+    font-family: "Helvetica Neue Condensed Bold";
+    padding-left: 8%;
+}
+.banner-top {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.slider {
+    width: 100%;
+    padding-bottom: 70px;
+    border-bottom: 1px solid #ffffff;
+    padding-right: 55px;
+}
+.slider-img {
+    width: 100%;
+    height: 495px;
+    overflow: hidden;
+}
+.slider-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.login-form {
+    padding-right: 90px;
+}
+.login-form-group {
+    padding: 0 20px;
+}
+.login-form form {
+    border-top: 1px solid #ffffff;
+    border-left: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+    position: relative;
+    padding: 102px 20px 0;
+    margin-bottom: 100px;
+}
+.icon-login {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    text-align: center;
+    width: 100%;
+}
+.form-input {
+    display: flex;
+}
+.input-username, .input-password {
+    outline: none;
+    background-color: transparent;
+    border-bottom: 1px solid #ffffff;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    color: #ffffff;
+    font-size: 16px;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 25px;
+    padding-left: 5px;
+}
+.login-code {
+    display: flex;
+    margin-bottom: 33px;
+}
+.login-code-left {
+    background-color: #ffffff;
+    width: 40%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.code-txt {
+    font-size: 20px;
+    line-height: 25px;
+    color: #707070;
+    font-weight: 600;
+    text-align: center;
+    font-family: "Helvetica Neue Bold";
+}
+.code-number {
+    font-size: 24px;
+    line-height: 29px;
+    color: #EF1919;
+    font-weight: 600;
+    text-align: center;
+    font-family: "Helvetica Neue Bold";
+}
+.login-code-right {
+    width: 60%;
+    background-color: #34CCE4;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.btn-login {
+    width: 100%;
+    height: 63px;
+    line-height: 63px;
+    font-size: 30px;
+    font-weight: 600;
+    color: #707070;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    outline: none;
+    border-color: transparent;
+    font-family: "Helvetica Neue Condensed Bold";
+}
+.icon-password {
+    position: relative;
+    bottom: 5px;
+}
+.banner-bottom-item-container {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+}
+.banner-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.banner-item p:first-child {
+    margin-bottom: 23px;
+}
+.footer {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    bottom: 40px;
+}
+.footer-container {
+    display: inline-flex;
+    justify-content: flex-end;
+    border-top: 1px solid #ffffff;
+    padding-top: 10px;
+    padding-right: 87px;
+}
+.banner-bottom {
+    border-bottom: 1px solid #ffffff;
+    margin: 0 38px 10px 77px;
+    position: relative;
+    bottom: 45px;
+}
+.footer-txt {
+    color: #ffffff;
+    font-size: 28px;
+    line-height: 24px;
+    font-family: "Helvetica Neue Bold Italic";
+}
+.txt-first {
+    margin-right: 95px;
+}
+.txt-second {
+    margin-right: 56px;
+}
+.qr-code {
+    padding: 24px 43px 26px 62px;
+    border-right: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    border-top: 1px solid #ffffff;
+    position: relative;
+}
+.qr-code:before {
+    content: "";
+    position: absolute;
+    height: 0.75px;
+    background-color: #ffffff;
+    bottom: 52px;
+    left: -54px;
+    width: 108px;
+    transform: rotate(
+            90deg
+    );
+}
+.qr-code-container {
+    text-align: center;
+}
+.store-icon {
+    margin-top: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+.figure {
+    width: 100%;
+    height: 85px;
+    background-color: transparent;
+    border-top: 1px solid #ffffff;
+    position: relative;
+    display: none;
+    visibility: hidden;
+}
+.figure:before {
+    content: "";
+    position: absolute;
+    height: 0.75px;
+    background-color: #ffffff;
+    bottom: 36px;
+    right: -50px;
+    width: 100px;
+    transform: rotate(90deg);
+}
+form:after {
+    content: "";
+    position: absolute;
+    height: 0.75px;
+    background-color: #ffffff;
+    bottom: -50px;
+    left: -50px;
+    width: 100px;
+    transform: rotate(90deg);
+}
+form:before {
+    content: "";
+    position: absolute;
+    height: 0.75px;
+    background-color: #ffffff;
+    bottom: -2px;
+    right: -100px;
+    width: 100px;
+    transform: rotate(180deg);
+}
+.slider-pagination {
+    width: 75%;
+    text-align: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.slider-pagination span {
+    width: 107px;
+    height: 6px;
+    background-color: #ffffff;
+    border-radius: unset;
+    margin-right: 20px;
+}
+.slider-pagination span:last-child {
+    margin-right: 0;
+}
+.br-sp {
+    display: none;
+}
+.icon-login {
+    display: block;
+    visibility: visible;
+}
+.icon-login-sp {
+    display: none;
+    visibility: hidden;
+}
+@media screen and (max-width: 1500px) {
+    .banner-top {
+        grid-template-columns: 70% 30%;
+    }
+    .banner-bottom-item-container {
+        width: 70%;
+    }
+    .icon-car {
+        width: 80%;
+    }
+    .icon-car img {
+        width: 100%;
+    }
+    .footer-txt {
+        color: #ffffff;
+        font-size: 19px;
+    }
+    .main-title {
+        font-size: 27px;
+        padding-left: 4%;
+    }
+    .btn-login {
+        font-size: 25px;
+    }
+    .code-txt {
+        font-size: 18px;
+    }
+    .code-number {
+        font-size: 20px;
+    }
+    .slider-pagination {
+        width: 65%;
+    }
+    .txt-first {
+        margin-right: 50px;
+    }
+    .txt-second {
+        margin-right: 88px;
+    }
+}
+@media screen and (max-width: 768px){
+    .br-sp {
+        display: block;
+    }
+    .main-container {
+        padding: 50px 46px 0 45px;
+        width: 100%;
+        overflow: hidden;
+    }
+    .main-title {
+        font-size: 25px;
+        line-height: 31px;
+        text-align: center;
+        padding-left: 0;
+        margin-bottom: 35px;
+    }
+    .slider {
+        display: none;
+        visibility: hidden;
+    }
+    .login-form {
+        padding-right: 0;
+    }
+    .icon-login {
+        display: none;
+    }
+    .banner-top {
+        grid-template-columns: auto;
+    }
+    .login-form form {
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        padding: 0;
+        margin-bottom: 42px;
+    }
+    form:before, form:after {
+        content: unset;
+    }
+    .qr-code:before {
+        content: unset;
+    }
+    .qr-code {
+        border-right: 0;
+        border-bottom: 0;
+        border-top: 0;
+        padding: 0 20px;
+    }
+    .banner-bottom {
+        display: none;
+        visibility: hidden;
+    }
+    .footer {
+        display: none;
+        visibility: hidden;
+    }
+    .icon-login-sp {
+        display: block;
+        visibility: visible;
+        text-align: center;
+        margin-bottom: 27px;
+    }
+    .icon-login {
+        display: none;
+        visibility: hidden;
+    }
+    .btn-login {
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 1365px) and (min-width: 769px) {
+    .login-form {
+        padding-right: 0;
+    }
+    .footer-container {
+        padding-left: 87px;
+    }
+    .footer {
+        margin-left: 77px;
+    }
+    .footer-container {
+        margin-left: 87px;
+        padding-left: 0;
+    }
+    .slider-pagination {
+        width: 60%;
+    }
+    .main-title {
+        padding-left: 0;
+        text-align: center;
+        margin-bottom: 80px;
+    }
+}
