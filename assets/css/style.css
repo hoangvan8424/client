@@ -195,8 +195,6 @@ body {
 .login-code-right {
     width: 60%;
     background-color: transparent;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
 }
 
 .btn-login {
